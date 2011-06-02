@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cearajs", "cearajs\cearajs.csproj", "{FCAB6E83-7214-4756-A6A7-616D2317480F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cearajs.Tests", "cearajs.Tests\cearajs.Tests.csproj", "{5246857F-6D48-4FD3-BD27-AC530387B64E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCAB6E83-7214-4756-A6A7-616D2317480F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCAB6E83-7214-4756-A6A7-616D2317480F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCAB6E83-7214-4756-A6A7-616D2317480F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCAB6E83-7214-4756-A6A7-616D2317480F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5246857F-6D48-4FD3-BD27-AC530387B64E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5246857F-6D48-4FD3-BD27-AC530387B64E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5246857F-6D48-4FD3-BD27-AC530387B64E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5246857F-6D48-4FD3-BD27-AC530387B64E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

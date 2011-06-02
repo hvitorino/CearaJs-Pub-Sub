@@ -1,0 +1,5 @@
+C:\Users\hamon\Documents\Visual Studio 2010\Projects\cearajs\cearajs\bin\cearajs.dll
+C:\Users\hamon\Documents\Visual Studio 2010\Projects\cearajs\cearajs\bin\cearajs.pdb
+C:\Users\hamon\Documents\Visual Studio 2010\Projects\cearajs\cearajs\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hamon\Documents\Visual Studio 2010\Projects\cearajs\cearajs\obj\Debug\cearajs.dll
+C:\Users\hamon\Documents\Visual Studio 2010\Projects\cearajs\cearajs\obj\Debug\cearajs.pdb
