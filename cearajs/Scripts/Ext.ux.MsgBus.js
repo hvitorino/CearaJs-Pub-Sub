@@ -48,6 +48,10 @@ Ext.override(Ext.ux.MsgBus, {
         cmp.bus.addEvents('message');
         cmp.subs = {};
         this.applyConfig();
+
+        for(topic in cmp.subscriptions)
+            cmp.subscribe(topic, cmp.subscriptions[topic]);
+
     } // eo function init
     // {{{
     /**
@@ -180,7 +184,11 @@ Ext.override(Ext.ux.MsgBus, {
              * @param {String} subject The message subject
              * @param {Mixed} message The message body
              */
-            ,onMessage:Ext.emptyFn
+            //,onMessage:Ext.emptyFn
+            ,onMessage:function(subject, message) {
+                if(this.subs[subject])
+                    this.subs[subject].config(message);
+            }
         });
     } // eo function applyConfig
     // }}}
