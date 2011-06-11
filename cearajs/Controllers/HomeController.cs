@@ -8,14 +8,12 @@ namespace cearajs.Controllers
 {
 	public class HomeController : Controller
 	{
-		public ActionResult Index()
+		public ActionResult ComPubSub()
 		{
-			ViewBag.Message = "Welcome to ASP.NET MVC!";
-
 			return View();
 		}
 
-		public ActionResult About()
+		public ActionResult SemPubSub()
 		{
 			return View();
 		}

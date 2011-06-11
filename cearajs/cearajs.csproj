@@ -66,6 +66,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="pubsubgif.gif" />
+    <Content Include="readme.txt" />
+    <Content Include="Scripts\cearajsSemPubSub.js" />
     <Content Include="Scripts\Ext.ux.MsgBus.js" />
     <Content Include="Scripts\ext-3.3.0\adapter\ext\ext-base-debug.js" />
     <Content Include="Scripts\ext-3.3.0\adapter\ext\ext-base.js" />
@@ -1324,7 +1327,7 @@
     <Content Include="Scripts\jQuery\jquery.meio.mask.js" />
     <Content Include="Scripts\jQuery\jquery.tmpl.min.js" />
     <Content Include="Scripts\jQuery\jquery.tmplPlus.min.js" />
-    <Content Include="Scripts\cearajs.js" />
+    <Content Include="Scripts\cearajsComPubSub.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -1332,7 +1335,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\ComPubSub.cshtml" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -1374,6 +1377,7 @@
     <None Include="Scripts\ext-3.3.0\resources\images\yourtheme\window\left-right.psd" />
     <None Include="Scripts\ext-3.3.0\resources\images\yourtheme\window\right-corners.psd" />
     <None Include="Scripts\ext-3.3.0\resources\images\yourtheme\window\top-bottom.psd" />
+    <Content Include="Views\Home\SemPubSub.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
