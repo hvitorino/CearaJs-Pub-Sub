@@ -119,14 +119,21 @@ Ext.override(Ext.ux.MsgBus, {
              * @return {Boolean} success true on success, false on failure (subscription exists)
              */
              subscribe:function(subject, config) {
-                var sub = this.subs[subject];
+                var component = this;
+                 
+                var sub = component.subs[subject];
                 if(sub) {
                     return false;
                 }
                 config = config || {};
-                config.filter = this.getFilterRe(subject);
-                this.subs[subject] = {config:config, fn:this.filterMessage.createDelegate(this, [config], true)};
-                this.bus.on('message', this.subs[subject].fn, config.scope || this, config);
+                config.filter = component.getFilterRe(subject);
+                component.subs[subject] = {config:config, fn:component.filterMessage.createDelegate(component, [config], true)};
+                component.bus.on('message', component.subs[subject].fn, config.scope || component, config);
+
+                component.addListener('beforedestroy', function() {
+                    component.unsubscribe(subject);
+                });
+                 
                 return true;
             }
  
